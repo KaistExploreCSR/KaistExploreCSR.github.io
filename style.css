@@ -82,7 +82,8 @@ a.nav-item:hover {
 #banner {
 	width: 100%;
 	height: 400px;
-	background-repeat: no-repeat;
+	/* background-image: url("images/banner.jpg"); */
+	/* background-repeat: no-repeat; */
 	background-size: cover;
 	background-position: center;
 
