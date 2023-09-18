@@ -211,11 +211,13 @@ footer {
 #footer-left {
 	margin-top: 20px;
 	text-align: left;
+	color: white;
 }
 
 #footer-right {
 	margin-top: 20px;
 	text-align: right;
+	color: white;
 }
 
 @media screen and (max-width: 768px) {
