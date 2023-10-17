@@ -374,7 +374,7 @@ table {
 }
 
 .session-title {
-  background-color: #dadafe;
+  background-color: #595757;
   color: black;
   font-size: 16px;
   padding: 4px 8px;
@@ -393,7 +393,7 @@ table {
 
 .session-presentation,
 .tutorial-presentation {
-  border: #dadafe solid 1px;
+  border: #595757 solid 1px;
   border-radius: 4px;
   margin-top: 8px;
   padding: 8px;
@@ -545,7 +545,7 @@ table {
 
 .panel-tag {
   padding: 4px 12px;
-  background-color: #dadafe;
+  background-color: #595757;
   margin: 8px 8px 0;
   border-radius: 20px;
 }
@@ -611,7 +611,7 @@ table {
   margin: 24px 36px;
   margin-left: 0;
   text-align: center;
-  border: 1px solid #dadafe;
+  border: 1px solid #595757;
   padding: 24px;
   border-radius: 12px;
 }
