@@ -48,6 +48,7 @@ button {
 }
 
 #navigation {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   background-color: #595757;
@@ -104,16 +105,23 @@ a.nav-item:hover {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#path-container::-webkit-scrollbar{
+  background: transparent;
+  width:0px;
 }
 
 #path-line {
   position:absolute;
-  width: 100%;
+  width: 600px;
   height: 10px;
   background-color: white;
   z-index: 0;
   top: calc(50% - 5px);
-  left: 0;
+  left: calc(50% - 300px);
 }
 
 #inner {
