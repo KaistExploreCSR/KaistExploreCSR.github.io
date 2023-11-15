@@ -121,12 +121,12 @@ a.nav-item:hover {
 
 #path-line {
   position:absolute;
-  width: 600px;
+  width: 800px;
   height: 10px;
   background-color: white;
   z-index: 0;
   top: calc(50% - 5px);
-  left: calc(50% - 300px);
+  left: calc(50% - 400px);
 }
 
 #inner {
