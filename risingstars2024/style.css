@@ -201,7 +201,7 @@ li::marker{
 }
 
 footer{
-    width: 80%;
+    /* width: 80%; */
     height: 100px;
     display: flex;
     padding: 10px 10%;
