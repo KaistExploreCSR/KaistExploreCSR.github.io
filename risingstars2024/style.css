@@ -5,7 +5,7 @@
 }
 
 :root{
-    --green: #C9D955;
+    --green: #CCEF3A;
     --dark-green: #889434;
     --darkdark-green: #32380d;
     --white: #F2F2F2;
@@ -71,7 +71,7 @@ button{
 }
 
 #home-logo{
-    width: 60px;
+    width: 120px;
     height: auto;
     margin-left: 40px;
 }
