@@ -547,6 +547,7 @@ footer{
     display:flex;
     gap: 50px;
     flex-wrap: wrap;
+    border-bottom: gray solid 1px;
 }
 
 .stars-info {
