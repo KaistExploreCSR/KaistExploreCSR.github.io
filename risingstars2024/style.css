@@ -207,7 +207,17 @@ footer{
     padding: 10px 10%;
     justify-content: space-between;
     font-weight: 200;
-}     
+} 
+
+.sns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sns > div > a {
+    color: white;
+}
 
 
 #footer-left{
