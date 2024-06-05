@@ -119,7 +119,13 @@ main{
     color: black;
 }
 
-#main, #schedule, #about, #hof, #title{
+#main, #schedule, #about, #hof{
+    max-width: 1024px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#title{
     max-width: 1024px;
     width: 80%;
     margin: 0 auto;
@@ -205,8 +211,13 @@ li::marker{
         row-gap: 24px;
     }
 
-    #main, #schedule, #about, #hof, #title{
+    #main, #schedule, #about, #hof{
         width: 90%;
+    }
+
+    #title {
+        width: 90%;
+    
     }
 }
 
