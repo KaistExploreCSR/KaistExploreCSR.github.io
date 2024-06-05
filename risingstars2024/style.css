@@ -330,6 +330,9 @@ footer{
 }
 
 .session-title{
+    max-width: 1024px;
+    width: 80%;
+    margin: 0 auto;
     padding: 4px 0px;
     padding-left: 8px;
     background-color: var(--green);
