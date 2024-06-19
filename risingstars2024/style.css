@@ -406,6 +406,31 @@ footer{
     padding: 0 12px;
 }
 
+/* unvisited link */
+a:link {
+    color: var(--dark-green);
+    text-decoration: none;
+    
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--dark-green);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--dark-green);
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--dark-green);
+    text-decoration: none;
+  }
+
 @media screen and (max-width:1150px) {
 
     
