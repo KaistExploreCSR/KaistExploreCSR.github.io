@@ -1,0 +1,346 @@
+/* Root Variables */
+:root {
+    --gradient-start: #B8C6E5;  /* Light blue-purple */
+    --gradient-mid: #9BA6D4;    /* Mid purple-blue */
+    --gradient-end: #6B5B99;    /* Dark purple */
+    --text-dark: #2A2A2A;
+    --text-light: #FFFFFF;
+    --text-muted: #8890A6;
+    --nav-height: 60px;
+    --font-mono: 'Courier New', Courier, monospace;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--text-light);
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    min-height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navigation */
+  #navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 1000;
+  }
+  
+  #home-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  #nav-container {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-item {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+  }
+  
+  .nav-item:hover {
+    opacity: 1;
+  }
+  
+  #nav-hamburger {
+    display: none;
+    cursor: pointer;
+    color: var(--text-light);
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  /* Banner Section */
+  #banner {
+    min-height: 80vh;
+    padding: calc(var(--nav-height) + 4rem) 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #kaist-explorecsr-rising-stars-2024 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+  }
+  
+  /* Main Content */
+  [role="main"] {
+    padding: 2rem;
+  }
+  
+  #main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+  }
+  
+  .infobox {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+  
+  #poster {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  #poster:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Box Titles and Sections */
+  .box-title {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin: 2rem 0 1rem;
+  }
+  
+  /* Page Titles */
+  .page-title {
+    padding: calc(var(--nav-height) + 2rem) 2rem 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+  }
+  
+  .page-title-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-light);
+  }
+  
+  /* Schedule Page */
+  #schedule {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .time {
+    margin: 2rem 0;
+  }
+  
+  .time-title {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+  }
+  
+  .time-range {
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+  }
+  
+  /* Team Members */
+  .member-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .member {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 1rem;
+  }
+  
+  .member-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-current {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  
+  /* Buttons */
+  .register-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .register-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* Footer */
+  .sns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .text-reset {
+    color: var(--text-light);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .text-reset:hover {
+    opacity: 1;
+  }
+  
+  .pb-2 {
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Utilities */
+  .subtitle {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    color: var(--text-light);
+    margin: 3rem 0 1.5rem;
+  }
+  
+  .mono-text {
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    #main {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .infobox {
+      max-width: 100%;
+    }
+  
+    #poster {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #nav-hamburger {
+      display: block;
+    }
+  
+    #nav-container {
+      display: none;
+      position: absolute;
+      top: var(--nav-height);
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 1.5rem;
+    }
+  
+    #nav-container.show {
+      display: flex;
+    }
+  
+    #kaist-explorecsr-rising-stars-2024 {
+      font-size: 2.5rem;
+    }
+  
+    .member-wrapper {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .page-title-text {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #navigation {
+      padding: 0 1rem;
+    }
+  
+    [role="main"] {
+      padding: 1rem;
+    }
+  
+    #main {
+      padding: 1rem;
+    }
+  
+    .infobox {
+      padding: 1rem;
+    }
+  }
