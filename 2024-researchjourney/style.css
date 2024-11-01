@@ -336,7 +336,7 @@ footer{
     padding: 4px 0px;
     padding-left: 8px;
     background-color: var(--blue);
-    color:black;
+    color:rgb(255, 255, 255);
     font-size: 16px;
     border-radius: 4px;
 }
@@ -359,7 +359,7 @@ footer{
 
 .presenter{
     display: grid;
-    grid-template-columns: 70px auto;
+    grid-template-columns: 85px auto;
     grid-template-rows: auto auto;
     margin-bottom: 8px;
 }
