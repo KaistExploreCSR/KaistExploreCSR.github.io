@@ -1,181 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <title>Rising Stars 2024 :: ExploreCSR</title>
-  <meta charset="utf-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
-  />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  />
-  <meta name="description" content="Rising Stars 2022" />
-  <link href="style.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - KAIST exploreCSR 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
 <body>
-  <div id="navigation">
-    <a href="index.html"><img id="home-logo" src="images/logo-green.svg" /></a>
-    <div id="nav-hamburger" onclick="onClickNavButton()">MENU</div>
-    <div id="nav-container">
-      <a href="index.html" class="nav-item">HOME</a>
-      <a href="schedule.html" class="nav-item">SCHEDULE</a>
-      <a href="about.html" class="nav-item">ABOUT US</a>
-      <a href="hof.html" class="nav-item">HALL OF FAME</a>
-      <a href="past.html" class="nav-item">PAST EVENTS</a>
-    </div>
-  </div>
+    <nav id="navigation">
+        <a href="index.html" class="logo-container">
+            <img src="images/star.png" alt="KAIST" class="kaist-logo">
+        </a>
+        
+        <button id="nav-hamburger" aria-label="Toggle navigation menu" onclick="onClickNavButton()">
+            <i class="fas fa-bars"></i>
+        </button>
 
-  <div class="page-title">
-    <div class="page-title-text">Schedule</div>
-  </div>
-
-  <main>
-    <div id="schedule">
-      <div class="time">
-        <div class="time-title">Keynote</div>
-        <div class="time-range">1:00 - 2:00 PM</div>
-      </div>
-      <div id="tutorials">
-        <div class="tutorial-presentation">
-          <div class="presenter">
-            <div class="presenter-name">황민영</div>
-            <div class="presenter-affil">셀렉트스타 부대표</div>
-          </div>
-          <div class="p-title"></div>
+        <div id="nav-container">
+            <a href="index.html" class="nav-item">HOME</a>
+            <a href="schedule.html" class="nav-item">SCHEDULE</a>
+            <a href="about.html" class="nav-item">ABOUT US</a>
+            <a href="hof.html" class="nav-item">HALL OF FAME</a>
+            <a href="past.html" class="nav-item">PAST EVENTS</a>
         </div>
-      </div>
+    </nav>
+
+    <div class="page-title">
+        <h1 class="page-title-text">Schedule</h1>
     </div>
-    <div class="session-title" id="title">Research Talk (2:00 - 6:00 PM)</div>
-    <div id="schedule">
-      <div class="time">
-        <div class="time-title">Rising Stars 발표</div>
-        <div class="time-range">1:00 - 3:00 PM</div>
-      </div>
-      <div id="session-wrapper">
-        <div class="session">
-          <div class="session-presentation">
-            <div class="presenter">
-              <div class="presenter-name">
-                <a href="https://mingyukim87.github.io/">이윤주</a>
-              </div>
-              <div class="presenter-affil">전산학부 박사과정</div>
-              <div class="presenter-reserach">
-                #Human-AI interaction #Human-centered NLP
-              </div>
+
+    <main role="main">
+        <section class="schedule-section">
+            <div class="schedule-block">
+                <h2 class="schedule-title">#1. Research Talk</h2>
+                <div class="schedule-time">13:00 - 15:00</div>
+                
+                <div class="schedule-content">
+                    <div class="presenter-card">
+                        <div class="presenter-name">이윤주</div>
+                        <div class="presenter-affil">전산학부 박사과정</div>
+                        <div class="presenter-research">#Human-AI interaction #Human-centered NLP</div>
+                        <div class="presentation-title">
+                            Personalized Knowledge Understanding Support: Aligning AI with How Humans Understand Knowledge
+                        </div>
+                    </div>
+                    
+                    <div class="presenter-card">
+                        <div class="presenter-name">류연희</div>
+                        <div class="presenter-affil">전산학부</div>
+                        <div class="presentation-title">
+                            정적분석이 가르치는 안전한 코드 생성 모델
+                        </div>
+                    </div>
+
+                    <!-- Add other presenters as needed -->
+                </div>
             </div>
-            <div class="p-title">
-              Personalized Knowledge Understanding Support: Aligning AI with How
-              Humans Understand Knowledge
+
+            <div class="schedule-block">
+                <h2 class="schedule-title">#2. Keynote Talk</h2>
+                <div class="schedule-time">15:00 - 16:00</div>
+                
+                <div class="schedule-content">
+                    <div class="presenter-card keynote">
+                        <div class="presenter-name">정혜원 교수님</div>
+                        <div class="presenter-affil">KAIST 전기및전자공학부</div>
+                        <div class="presentation-title">학문의 즐거움</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="session-presentation">
-            <div class="presenter">
-              <div class="presenter-name">
-                <a href="https://www.mjhci.com/">김명진</a>
-              </div>
-              <div class="presenter-affil">
-                카이스트 산업디자인학과 박사과정
-              </div>
-              <div class="presenter-reserach">
-                #Physical Interfaces #XR Interaction Design #Perceptual
-                Illusions
-              </div>
+
+            <div class="schedule-block">
+                <h2 class="schedule-title">Panel Discussion</h2>
+                <div class="schedule-time">16:00 - 17:00</div>
+                <div class="schedule-description">
+                    Rising Stars와 함께하는 패널톡
+                </div>
             </div>
-            <div class="p-title">연구자로서 나만의 자리를 찾는 여정</div>
-          </div>
-          <div class="session-presentation">
-            <div class="presenter">
-              <div class="presenter-name">유연국</div>
-              <div class="presenter-affil">GIST 융합기술학제학부 박사과정</div>
-              <div class="presenter-reserach">
-                #AI Researcher #Continuous Learner
-              </div>
+
+            <div class="schedule-block">
+                <h2 class="schedule-title">Group Discussion</h2>
+                <div class="schedule-time">17:00 - 18:00</div>
+                <div class="schedule-description">
+                    Rising Stars와 함께하는 소규모 질의응답 (Optional)
+                </div>
             </div>
-            <div class="p-title">
-              How can a neural network learn continuously? (From
-              Out-of-distribution detection to online adaptation)
+        </section>
+
+        <section class="contact-section">
+            <h2 class="contact-title">CONTACT</h2>
+            <div class="contact-links">
+                <a href="https://instagram.com/kaist.explorecsr" class="contact-link">
+                    <i class="fab fa-instagram"></i> @kaist.explorecsr
+                </a>
+                <a href="mailto:kaist.explorecsr@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> kaist.explorecsr@gmail.com
+                </a>
             </div>
-          </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com/kaist.explorecsr" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100071107790941" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a>
         </div>
-        <div class="session">
-          <div class="session-presentation">
-            <div class="presenter">
-              <div class="presenter-name">김지원</div>
-              <div class="presenter-affil">
-                카이스트 전기및전자공학부 박사과정
-              </div>
-              <div class="presenter-reserach">
-                #캠퍼스커플 #학생맘 #영상처리연구자
-              </div>
-            </div>
-            <div class="p-title">박사과정과 육아의 양립</div>
-          </div>
-          <div class="session-presentation">
-            <div class="presenter">
-              <div class="presenter-name">
-                <a href="https://haneul-yoo.github.io/">유하늘</a>
-              </div>
-              <div class="presenter-affil">카이스트 전산학부 박사과정</div>
-              <div class="presenter-reserach">#NLP #Intern #Social</div>
-            </div>
-            <div class="p-title">AI Safety and Alignment with Languages</div>
-          </div>
+
+        <div class="copyright">© 2024 KAIST ExploreCSR</div>
+
+        <div class="sponsor-section">
+            <div class="sponsor-title">Sponsored by</div>
+            <img src="images/googleResearch.png" alt="Google Research" class="sponsor-logo">
         </div>
-      </div>
+    </footer>
 
-      <div class="time" style="margin-top: 20px">
-        <div class="time-title">Panel Talk</div>
-        <div class="time-range">4:00 - 5:00 PM</div>
-      </div>
-      <div style="margin-top: 20px">
-        <div class="d-title">Rising Stars와 함께하는 패널톡</div>
-      </div>
-
-      <div class="time">
-        <div class="time-title">Group Discussion (Optional)</div>
-        <div class="time-range">5:00 - 6:00 PM</div>
-      </div>
-      <div>
-        <div class="d-title">Rising Stars와 함께하는 소규모 질의응답</div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="sns">
-      <div class="me-3">
-        <a class="text-reset" href="https://www.instagram.com/kaist.explorecsr/"
-          ><i class="bi bi-instagram"></i
-        ></a>
-      </div>
-      <div class="me-3">
-        <a
-          class="text-reset"
-          href="https://www.facebook.com/profile.php?id=100071107790941"
-          ><i class="bi bi-facebook"></i
-        ></a>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex align-items-center">
-      <span class="mb-3 mb-md-0">© 2024 KAIST ExploreCSR</span>
-    </div>
-
-    <div>
-      <div class="pb-2">Sponsored by</div>
-      <img src="images/googleResearch.png" style="width: 150px; height: auto" />
-    </div>
-  </footer>
-
-  <script src="interaction.js"></script>
+    <script src="interaction.js"></script>
 </body>
+</html>
