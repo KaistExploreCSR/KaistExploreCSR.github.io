@@ -616,3 +616,33 @@ footer {
     margin-bottom: 2rem;
 }
 
+.schedule-section .presenter-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.schedule-section .detail-card {
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 2px solid var(--accent-blue);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+/* Add responsive adjustments if needed */
+@media (max-width: 768px) {
+    .schedule-section .presenter-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .schedule-section .detail-card {
+        width: 150px;
+    }
+}
+
