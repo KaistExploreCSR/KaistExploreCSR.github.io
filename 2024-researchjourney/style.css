@@ -72,7 +72,6 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
     z-index: 1000;
     border-bottom: 1px solid rgba(140, 163, 216, 0.2);
   }
