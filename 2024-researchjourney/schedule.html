@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <div id="navigation">
         <a href="index.html"><img id="home-logo" src="images/logo-blue.png"/></a>
         <div id="nav-hamburger" onclick="onClickNavButton()">MENU</div>
@@ -24,27 +23,21 @@
             <a href="past.html" class="nav-item">PAST EVENTS</a>
         </div>
     </div>
-
-    <div class="page-title">
-        <div class="page-title-text">Schedule</div>
-        
-    </div>
+    
 
     <main>
+        <div class="session-title" id="title"> Opening (1:00 - 1:10 PM) </div>
+
         <div id="schedule">
-            <div class="time">
-                <div class="time-title">Opening</div>
-                <div class="time-range">1:00 - 1:10 PM</div>
-            </div>
-            <div id="tutorials">
-                <div class="session">
-                    <div class="tutorial-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="https://bdi-lab.kaist.ac.kr/">황지영</a></div>
-                            <div class="presenter-affil">KAIST 전산학부 교수</div>
-                        </div>
-                <div class="p-title"></div>
-            </div>
+            <div class="presenter-profile">
+                <div
+                  class="presenter-image"
+                  style="background-image: url(images/presenters/\(prof\)hwang.jpg)"
+                ></div>
+                <div class="member-info">
+                  <div class="member-name"><a href="https://bdi-lab.kaist.ac.kr/">황지영</a></div>
+                  <div class="member-current">KAIST 전산학부 교수</div>
+                </div>
             </div>
         </div>
         </div>
@@ -52,67 +45,124 @@
         <div class="session-title" id="title"> Women CS/AI/EE Graduate Students' Research Talk (1:10 - 3:00 PM) </div>
         
         <div id="schedule">
-            <div class="time">
-                <div class="time-title">Research</div>
-                <div class="time-range">1:10 - 3:00 PM</div>
-            </div>
-            <div id="tutorials">
-                <div class="session">
-                    <div class="session-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="yoonjoolee.com">이윤주</a></div>
-                            <div class="presenter-affil">카이스트 전산학부 박사과정</div>
-                            <div class="presenter-reserach">#Human-AI Interaction #Human-centered NLP</div>
+            <div class="session">
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/yoonjoo.png)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="yoonjoolee.com">이윤주</a></div>
+                            <div class="member-current">KAIST 전산학부 박사과정</div>
                         </div>
-                        <div class="p-title">Personalized Knowledge Understanding Support: Aligning AI with How Humans Understand Knowledge</div>
                     </div>
-                    <div class="session-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="yeonhee-ryou.github.io">류연희</a></div>
-                            <div class="presenter-affil">카이스트 전산학부 박사과정</div>
-                            <div class="presenter-reserach">#Code generation #Static analysis</div>
-                        </div>
-                        <div class="p-title">정적 분석이 가르치는 안전한 코드 생성 모델</div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach">#Human-AI Interaction #Human-centered NLP</div>
+                        <div class="p-title"><div class="p-box"></div>Personalized Knowledge Understanding Support: Aligning AI with How Humans Understand Knowledge</div>
+                        <div class="p-content">With advancements in LLMs, users increasingly rely on AI to understand complex information, yet face unique challenges based on their prior knowledge. In this talk, I will present two projects designed to address these challenges by aligning AI support with each user's knowledge state, fostering deeper understanding and engagement with content.</div>
                     </div>
-                    <div class="session-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="http://ryuhaerangchoi.com">최류해랑</a></div>
-                            <div class="presenter-affil">카이스트 전기및전자공학부 박사과정</div>
-                            <div class="presenter-reserach">#Human-centered Computing #Mental Health Intervention #Eating Disorder</div>
+                </div>
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/yeonhee.png)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="yeonhee-ryou.github.io">류연희</a></div>
+                            <div class="member-current">KAIST 전산학부 박사과정</div>
                         </div>
-                        <div class="p-title">Navigating the Digital Food Trap: Understanding and Mitigating the Impact of Food Content on Eating Disorders</div>
                     </div>
-                    <div class="session-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="jungeun122333.github.io">김정은</a></div>
-                            <div class="presenter-affil">카이스트 AI대학원 석사과정</div>
-                            <div class="presenter-reserach">#4D generation #Medical Imaging #Journal Extension</div>
-                        </div>
-                        <div class="p-title">Data-Efficient Interpolation for 4D Medical Images: From Unsupervised to Supervised Enhancement</div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach">#Code generation #Static analysis</div>
+                        <div class="p-title"><div class="p-box"></div>정적 분석이 가르치는 안전한 코드 생성 모델</div>
+                        <div class="p-content">거대 언어 모델을 이용하는 코드 자동 완성, 결함 수정 등 코드에 적용하는 다양한 연구가 발전하고 있지만, 언어 모델을 활용하는 방법은 프롬프트 엔지니어링이나 추가 학습(Fine-tuning) 방법 등으로 제한적입니다. 이 발표에서는 정적 분석 데이터와 강화 학습을 이용해서 언어 모델이 더 안전한 코드를 생성하도록 학습하는 아이디어를 제시하고, 실험적인 결과를 공유드리겠습니다.</div>
                     </div>
-                    <div class="session-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="https://youngji-koh.github.io/">고영지</a></div>
-                            <div class="presenter-affil">카이스트 전산학부 박사과정</div>
-                            <div class="presenter-reserach">#Human-data Interaction #Mental Health Self-tracking #Smarthome IoT Sensing</div>
+                </div>
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/ryuhaerang.jpeg)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="http://ryuhaerangchoi.com">최류해랑</a></div>
+                            <div class="member-current">KAIST 전기및전자공학부 박사과정</div>
                         </div>
-                        <div class="p-title">Exploring Context-Aware Mental Health Self-Tracking Using Multimodal Smart Speakers in Home Environments</div>
                     </div>
-                    <div class="session-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="https://sites.google.com/view/ss0-0y">김소연</a></div>
-                            <div class="presenter-affil">카이스트 전기및전자공학부 박사과정</div>
-                            <div class="presenter-reserach">#Trustworthy AI #LLM Hallucination #DB4AI</div>
-                        </div>
-                        <div class="p-title">Truth or Fiction? A Database Approach for LLM Hallucination Evaluation</div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach">#Human-centered Computing #Mental Health Intervention #Eating Disorder</div>
+                        <div class="p-title"><div class="p-box"></div>Navigating the Digital Food Trap: Understanding and Mitigating the Impact of Food Content on Eating Disorders</div>
+                        <div class="p-content">From vibrant eating broadcasts (Mukbang) to recipe videos on YouTube, multimedia food content brings enjoyment and a sense of connection to our daily lives. However, for individuals with eating disorders, such food-related media can backfire: tempting food videos may inadvertently trigger disordered behaviors like binge eating. In this talk, I will discuss these challenges and introduce FoodCensor, an intervention designed to promote mindful engagement with digital food content and support a healthier online experience.</div>
                     </div>
-                    <div class="session-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="https://haneul-yoo.github.io/">유하늘</a></div>
-                            <div class="presenter-affil">카이스트 전산학부 박사과정</div>
-                            <div class="presenter-reserach">#Multilingual LLM #Code-Switching #Curriculum Learning #AI Safety</div>
+                </div>
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/jungeun.jpg)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="jungeun122333.github.io">김정은</a></div>
+                            <div class="member-current">KAIST AI대학원 석사과정</div>
                         </div>
-                        <div class="p-title">Code-Switching Curriculum Learning: from Efficient Multilingual Training to Better Safety Alignment</div>
+                    </div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach">#4D generation #Medical Imaging #Journal Extension</div>
+                        <div class="p-title"><div class="p-box"></div>Data-Efficient Interpolation for 4D Medical Images: From Unsupervised to Supervised Enhancement</div>
+                        <div class="p-content">"Data-Efficient Unsupervised Interpolation Without Any Intermediate Frame for 4D Medical Images" 논문(CVPR'24 Accepted)의 main method 소개 및 저널 extension을 위한 motivation 및 additional contribution에 대해 설명하겠습니다.</div>
+                    </div>
+                </div>
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/yeongji.jpg)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="https://youngji-koh.github.io/">고영지</a></div>
+                            <div class="member-current">KAIST 전산학부 박사과정</div>
+                        </div>
+                    </div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach">#Human-data Interaction #Mental Health Self-tracking #Smarthome IoT Sensing</div>
+                        <div class="p-title"><div class="p-box"></div>Exploring Context-Aware Mental Health Self-Tracking Using Multimodal Smart Speakers in Home Environments</div>
+                        <div class="p-content">This talk introduces a proactive self-tracking system designed for mental health research, utilizing a multimodal smart speaker to deliver surveys based on user context transitions. By adapting survey timing and modality to the user's immediate environment, the system aims to increase engagement and compliance, enhancing data quality. A four-week field study revealed user preferences for touch interactions over voice commands, with interaction choice influenced by ongoing activities. Key findings offer valuable design insights for creating effective, context-aware mental health tools for home environments.</div>
+                    </div>
+                </div>
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/soyeon.jpg)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="https://sites.google.com/view/ss0-0y">김소연</a></div>
+                            <div class="member-current">KAIST 전기및전자공학부 박사과정</div>
+                        </div>
+                    </div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach">#Trustworthy AI #LLM Hallucination #DB4AI</div>
+                        <div class="p-title"><div class="p-box"></div>Truth or Fiction? A Database Approach for LLM Hallucination Evaluation</div>
+                        <div class="p-content">NeurlPS'24 Dataset and Benchmark에서 Spotlight 논문으로 선정된 데이터 기반의 LLM Hallucination 평가기법을 소개하고, 데이터베이스와 LLM 같은 이종 분야 결합의 시너지 효과에 대하 직접적인 경험을 공유할 예정입니다.</div>
+                    </div>
+                </div>
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/haneul.jpg)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="https://haneul-yoo.github.io/">유하늘</a></div>
+                            <div class="member-current">KAIST 전산학부 박사과정</div>
+                        </div>
+                    </div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach">#Multilingual LLM #Code-Switching #Curriculum Learning #AI Safety</div>
+                        <div class="p-title"><div class="p-box"></div>Code-Switching Curriculum Learning: from Efficient Multilingual Training to Better Safety Alignment</div>
+                        <div class="p-content">State-of-the-art multilingual LLMs have shown their vulnerabilities in non-English, code-switching attacks, revealing a spurious correlation between language resources and safety alignment. This talk briefly introduces code-switching curriculum learning, an effective and efficient training strategy for the language transfer of LLMs. The code-switching curriculum learning advances the cross-lingual alignment of LLMs, which enables mitigation of the aforementioned spurious correlation.</div>
                     </div>
                 </div>
             </div>
@@ -121,19 +171,22 @@
        <div class="session-title" id="title"> Key Note Session (3:00 - 4:00 PM) </div>
        
         <div id="schedule">
-            <div class="time">
-                <div class="time-title">Key Note Talk / <br/> Q & A</div>
-                <div class="time-range">3:00 - 4:00 PM</div>
-            </div>
-            
-            <div id="tutorials">
-                <div class="session">
-                    <div class="tutorial-presentation">
-                        <div class="presenter">
-                            <div class="presenter-name"><a href="https://iids.kaist.ac.kr/">정혜원</a></div>
-                            <div class="presenter-affil">KAIST 전기전자공학부 교수</div>
+            <div class="session">
+                <div class="session-presentation">
+                    <div class="presenter-profile">
+                        <div
+                            class="presenter-image"
+                            style="background-image: url(images/presenters/\(prof\)jung.jpg)"
+                        ></div>
+                        <div class="member-info">
+                            <div class="member-name"><a href="https://iids.kaist.ac.kr/">정혜원</a></div>
+                            <div class="member-current">KAIST 전기및전자공학부 교수</div>
                         </div>
-                        <div class="p-title">학문의 즐거움</div>
+                    </div>
+                    <div class="presenter-info">
+                        <div class="presenter-reserach"></div>
+                        <div class="p-title"><div class="p-box"></div>학문의 즐거움</div>
+                        <div class="p-content"></div>
                     </div>
                 </div>
             </div>
