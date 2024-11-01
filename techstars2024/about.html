@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - KAIST exploreCSR 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav id="navigation">
+        <a href="index.html" class="logo-container">
+            <img src="images/star.png" alt="KAIST" class="kaist-logo">
+        </a>
+        
+        <button id="nav-hamburger" aria-label="Toggle navigation menu" onclick="onClickNavButton()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div id="nav-container">
+            <a href="index.html" class="nav-item">HOME</a>
+            <a href="schedule.html" class="nav-item">SCHEDULE</a>
+            <a href="about.html" class="nav-item">ABOUT US</a>
+            <a href="hof.html" class="nav-item">HALL OF FAME</a>
+            <a href="past.html" class="nav-item">PAST EVENTS</a>
+        </div>
+    </nav>
+
+    <div class="page-title">
+        <h1 class="page-title-text">About Us</h1>
+    </div>
+
+    <main role="main">
+        <section class="about-section">
+            <h2 class="section-title">Advising Committee</h2>
+            <div class="committee-members">
+                <div class="member-card">
+                    <div class="member-name">안성진</div>
+                    <div class="member-role">전산학부 교수</div>
+                </div>
+                <div class="member-card">
+                    <div class="member-name">안희진</div>
+                    <div class="member-role">전기및전자공학부 교수</div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Student Organizers</h2>
+            <div class="team-section">
+                <h3 class="team-title">기획팀</h3>
+                <div class="member-grid">
+                    <!-- Member cards with profile images -->
+                    <div class="member-card with-image">
+                        <div class="member-image" style="background-image: url(images/organizers/kihoon.jpg)"></div>
+                        <div class="member-info">
+                            <div class="member-name">손기훈</div>
+                            <div class="member-role">전산학부 박사과정</div>
+                        </div>
+                    </div>
+                    <!-- Add other team members similarly -->
+                </div>
+
+                <h3 class="team-title">홍보팀</h3>
+                <div class="member-grid">
+                    <!-- PR team member cards -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="contact-title">CONTACT</h2>
+            <div class="contact-links">
+                <a href="https://instagram.com/kaist.explorecsr" class="contact-link">
+                    <i class="fab fa-instagram"></i> @kaist.explorecsr
+                </a>
+                <a href="mailto:kaist.explorecsr@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> kaist.explorecsr@gmail.com
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <script src="interaction.js"></script>
+</body>
+</html>
