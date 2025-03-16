@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025 Research Journey</title>
+    <script>
+        async function loadContent() {
+            try {
+                let response = await fetch('/2024-researchjourney/');
+                let text = await response.text();
+                document.getElementById('content').innerHTML = text;
+            } catch (error) {
+                console.error("Error loading content:", error);
+            }
+        }
+        window.onload = loadContent;
+    </script>
 </head>
 <body>
-    <iframe src="/2024-researchjourney/" width="100%" height="1000px" style="border:none;"></iframe>
+    <div id="content">Loading...</div>
 </body>
 </html>
